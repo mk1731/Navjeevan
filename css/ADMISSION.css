@@ -1,0 +1,168 @@
+/* ================================
+   ADMISSION PAGE STYLES
+================================ */
+
+.admission-hero {
+    background: #0b5ed7;
+    color: #ffffff;
+    padding: 70px 40px;
+}
+
+.admission-hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.admission-hero p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* MAIN CONTAINER */
+.admission-container {
+    padding: 70px 40px;
+}
+
+/* ================================
+   BRANCH LINKS (FIXED SPACING)
+================================ */
+
+.branch-links {
+    margin-bottom: 50px;
+}
+
+.branch-links h2 {
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+/* IMPORTANT FIX */
+.branch-links ul {
+    display: flex;
+    flex-wrap: wrap;              /* allows wrapping */
+    gap: 16px 20px;               /* vertical | horizontal spacing */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.branch-links li {
+    margin: 0;
+}
+
+.branch-links a {
+    display: inline-block;
+    background: #eef3fb;
+    padding: 12px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #0b5ed7;
+    font-weight: 600;
+    border-radius: 8px;
+    white-space: nowrap;          /* prevents awkward breaks */
+    transition: background 0.2s ease;
+}
+
+.branch-links a:hover {
+    background: #dce8fb;
+}
+
+/* ================================
+   ADMISSION TABS
+================================ */
+
+.admission-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.admission-tab {
+    padding: 14px 22px;
+    background: #f2f4f8;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.admission-tab:hover {
+    background: #e3e8f0;
+}
+
+.admission-tab.active {
+    background: #0b5ed7;
+    color: #ffffff;
+}
+
+/* ================================
+   ADMISSION CONTENT
+================================ */
+
+.admission-content {
+    display: none;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admission-content.active {
+    display: block;
+}
+
+.admission-content h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.admission-content p,
+.admission-content li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+/* LIST STYLING */
+.admission-content ul,
+.admission-content ol {
+    padding-left: 20px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+    .admission-hero {
+        padding: 50px 20px;
+    }
+
+    .admission-hero h1 {
+        font-size: 30px;
+    }
+
+    .admission-container {
+        padding: 40px 20px;
+    }
+
+    .branch-links a {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .admission-tab {
+        font-size: 14px;
+        padding: 12px 16px;
+    }
+
+    .admission-content {
+        padding: 30px 20px;
+    }
+}

@@ -1,0 +1,570 @@
+/* ================================
+   ABOUT HERO SECTION
+================================ */
+
+.about-hero {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.about-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay */
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 60px 40px; /* LEFT TOUCHING STYLE */
+}
+
+/* ABOUT TAG */
+.about-tag {
+    background: #0b5ed7;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+
+/* MAIN TITLE */
+.about-title {
+    color: #ffffff;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 0.95;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* ================================
+   ABOUT SUB NAVBAR
+================================ */
+
+.about-subnav {
+    background: #eaf3fb;
+    border-bottom: 1px solid #d6e3f3;
+}
+
+.about-subnav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    padding: 14px 40px;
+    margin: 0;
+}
+
+.about-subnav li {
+    margin: 0;
+}
+
+.about-subnav a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: #111111;
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+.about-subnav a:hover,
+.about-subnav a.active {
+    color: #0b5ed7;
+    border-bottom: 3px solid #0b5ed7;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1024px) {
+    .about-title {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 300px;
+    }
+
+    .about-hero-overlay {
+        padding: 0 0 30px 20px;
+    }
+
+    .about-title {
+        font-size: 42px;
+    }
+
+    .about-subnav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 12px 20px;
+    }
+}
+/* ================================
+   ABOUT INSTITUTE SECTION
+================================ */
+
+.about-institute {
+    padding: 80px 40px;
+    background: #ffffff;
+}
+
+.about-institute-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+/* TEXT AREA (60%) */
+.about-institute-text {
+    width: 60%;
+    text-align: left; 
+}
+
+.about-institute-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.about-institute-text p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+/* IMAGE AREA (40%) */
+.about-institute-image {
+    width: 40%;
+    display: flex;
+}
+
+.about-institute-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+    .about-institute-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .about-institute-text,
+    .about-institute-image {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-institute {
+        padding: 50px 20px;
+    }
+}
+/* ================================
+   SCROLL ANIMATIONS
+================================ */
+
+/* Initial hidden state */
+.animate-left,
+.animate-right {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 2.5s ease, transform 2.5s ease;
+}
+
+/* Left animation */
+.animate-left {
+    transform: translateX(-80px);
+}
+
+/* Right animation */
+.animate-right {
+    transform: translateX(80px);
+}
+
+/* When visible */
+.animate-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* ================================
+   VISION & MISSION SECTION
+================================ */
+
+.vision-mission {
+    padding: 90px 40px;
+    background: #f8fbff;
+}
+
+.vision-mission-wrapper {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+/* CARD STYLE */
+.vm-card {
+    width: 50%;
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.vm-card h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #0b5ed7;
+}
+
+.vm-card p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+    .vision-mission-wrapper {
+        flex-direction: column;
+    }
+
+    .vm-card {
+        width: 100%;
+    }
+
+    .vision-mission {
+        padding: 60px 20px;
+    }
+}
+/* ================================
+   FOUNDER MESSAGE SECTION
+================================ */
+
+.founder-section {
+    padding: 80px 40px;
+    background: #eef8fc;
+}
+
+.founder-card {
+    display: flex;
+    gap: 50px;
+    background: #eef8fc;
+    border-radius: 28px;
+    padding: 50px;
+    align-items: flex-start;
+}
+
+/* LEFT PROFILE */
+.founder-profile {
+    width: 280px;
+    text-align: left;
+}
+
+.founder-profile img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.founder-profile h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 6px;
+    color: #111;
+}
+
+.founder-profile p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* RIGHT MESSAGE */
+.founder-message {
+    flex: 1;
+    position: relative;
+}
+
+.quote-mark {
+    font-size: 80px;
+    font-weight: 800;
+    color: #cfd8dc;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+}
+
+.founder-message p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+    .founder-card {
+        flex-direction: column;
+        padding: 40px 25px;
+    }
+
+    .founder-profile {
+        width: 100%;
+        text-align: center;
+    }
+
+    .founder-profile img {
+        margin: 0 auto 20px;
+    }
+
+    .quote-mark {
+        left: 0;
+    }
+}
+/* ================================
+   DIPLOMA / ENGINEERING TOGGLE
+================================ */
+
+.program-toggle-section {
+    padding: 80px 40px;
+    background: #ffffff;
+}
+
+/* ================================
+   DIPLOMA / ENGINEERING TABS (VIT STYLE)
+================================ */
+
+.program-toggle-section {
+    padding: 80px 40px;
+    background: #ffffff;
+}
+
+/* TAB BAR */
+.program-toggle-tabs {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    border-bottom: 2px solid #d6e3f3;
+}
+
+/* EACH TAB */
+.program-toggle-tabs .toggle-btn {
+    flex: 1;
+    padding: 18px 0;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #222;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* ACTIVE TAB (LIKE VIT RED TAB) */
+.program-toggle-tabs .toggle-btn.active {
+    background: #0b5ed7; /* VIT-style reddish brown */
+    color: #ffffff;
+}
+
+/* Make active tab look raised */
+.program-toggle-tabs .toggle-btn.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #1675a4;
+}
+
+/* CONTENT */
+.program-content {
+    display: none;
+}
+
+.program-content.active {
+    display: block;
+}
+
+.program-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.program-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .program-toggle-section {
+        padding: 60px 20px;
+    }
+
+    .program-toggle-tabs .toggle-btn {
+        font-size: 15px;
+        padding: 14px 0;
+    }
+}
+
+
+/* CONTENT AREA */
+.program-toggle-content {
+    max-width: 100%;
+}
+
+.program-content {
+    display: none;
+}
+
+.program-content.active {
+    display: block;
+}
+
+.program-content h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+}
+
+.program-content p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .program-toggle-section {
+        padding: 60px 20px;
+    }
+}
+/* ================================
+   PRINCIPAL PROFILE SECTION
+================================ */
+
+.principal-profile-section {
+    padding: 80px 40px;
+    background: #f8fbff;
+}
+
+.principal-card {
+    display: flex;
+    gap: 50px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 50px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* IMAGE */
+.principal-image {
+    width: 260px;
+    flex-shrink: 0;
+}
+
+.principal-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* DETAILS */
+.principal-details {
+    flex: 1;
+}
+
+.principal-details h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    color: #111;
+}
+
+.principal-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b5ed7;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.principal-info p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.principal-info strong {
+    font-weight: 700;
+    color: #111;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+    .principal-card {
+        flex-direction: column;
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .principal-image {
+        width: 220px;
+    }
+
+    .principal-image img {
+        height: 280px;
+    }
+
+    .principal-details h4 {
+        margin-bottom: 20px;
+    }
+}

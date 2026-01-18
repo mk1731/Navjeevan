@@ -1,0 +1,269 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== COMMON ===== */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* ===== TOP HEADER ===== */
+.top-header {
+    background: #f4f8fb;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-flex {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 15px 0;
+    gap: 20px;
+}
+
+.header-logo img {
+    width: 90px;
+}
+
+.header-title {
+    text-align: center;
+}
+
+.header-title h4 {
+    color: #1e5aa8;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header-title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-title p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #ffffff;
+    border-bottom: 3px solid #1e5aa8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
+
+.nav-menu > li {
+    position: relative;
+}
+
+.nav-menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-menu > li > a:hover {
+    background: #e9f2ff;
+    color: #1e5aa8;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    min-width: 230px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    list-style: none;
+    z-index: 999;
+    border-radius: 12px;
+    padding: 6px 0;
+}
+
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 15px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background: #f0f6ff;
+    color: #1e5aa8;
+}
+
+/* ===== RIGHT SIDE DROPDOWN ===== */
+.dropdown-right {
+    position: relative;
+}
+
+.dropdown-menu-right {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #ffffff;
+    min-width: 230px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: none;
+    list-style: none;
+      border-radius: 12px;
+    padding: 6px 0;
+}
+
+.dropdown-right:hover .dropdown-menu-right {
+    display: block;
+}
+
+/* ===== DROPDOWN HOVER ===== */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1e5aa8;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+/* ===== MAIN FOOTER ===== */
+.main-footer {
+    background: #3f4a92; /* similar to VIT footer */
+    color: #ffffff;
+    padding: 50px 0 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr 2.4fr 0.5fr;
+    gap: 40px;
+}
+
+
+/* FOOTER COLUMNS */
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+/* LEFT ABOUT SECTION */
+.footer-about h3 {
+    font-size: 16px;
+    margin: 15px 0 10px;
+    line-height: 1.4;
+}
+
+.footer-about p {
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.footer-logo {
+    width: 90px;
+}
+
+/* FOOTER BOTTOM */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 40px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+/* ===== FOOTER ACADEMICS (SIDE BY SIDE) ===== */
+.footer-academics.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-academic-block h5 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-academic-block ul {
+    list-style: none;
+}
+
+.footer-academic-block ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.footer-academic-block ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.footer-academic-block ul li a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .footer-academics.two-col {
+        grid-template-columns: 1fr;
+    }
+}

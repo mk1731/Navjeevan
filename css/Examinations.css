@@ -1,0 +1,97 @@
+/* HERO */
+.exam-hero {
+    height: 300px;
+    background: url("../assets/images/classroom2.png") center/cover no-repeat;
+    position: relative;
+}
+
+.exam-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    color: #fff;
+}
+
+.exam-hero h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+
+/* PAGE */
+.exam-page {
+    padding: 60px 0;
+}
+
+.exam-section {
+    margin-bottom: 60px;
+}
+
+.exam-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.exam-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.exam-card h3 {
+    margin-bottom: 10px;
+}
+
+.exam-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0b5ed7;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* INSTRUCTIONS */
+.exam-instructions {
+    background: #f5f7fb;
+    padding: 40px;
+    border-radius: 14px;
+}
+
+.exam-instructions ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.exam-instructions li {
+    margin-bottom: 10px;
+}
+
+/* ANIMATION */
+.animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
