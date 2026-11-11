@@ -215,7 +215,7 @@ class SpecialFooter extends HTMLElement{
     <div class="footer-bottom">
         <p>
             © 2026 Navjeevan Education Society's Polytechnic & College of Engineering.
-            All Rights Reserved. | Designed by Mayuresh Patil
+            All Rights Reserved. | Designed by  <a href="https://mayureshpatil.netlify.app/" target="_blank" rel="noopener noreferrer">Mayuresh Patil</a>
         </p>
     </div>
 </footer>
